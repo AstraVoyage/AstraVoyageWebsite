@@ -1,3 +1,7 @@
+header {
+    display: block;
+}
+
 img {
 	vertical-align: middle;
 	border-style;
@@ -57,4 +61,12 @@ img {
 .astra-image {
 	max-width: 100%;
     height: auto;
+}
+
+.astra-header {
+    position: relative;
+    letter-spacing: 4px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
