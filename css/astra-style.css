@@ -106,12 +106,20 @@ img {
 .astra-image {
       background: url("img/astra_voyage_background.png") no-repeat;
       box-shadow: inset 0 0 0 1000px rgba(84, 38, 121, .3);
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
       z-index: -3;
   }
   .astra-image:before {
       content: "";
+      width: 100%;
+      height: 100%;
       background: #000;
       z-index: -1;
+      top: 0;
+      left: 0;
       opacity: 0.3;
   }
   @keyframes sf-fly-by-1 {
@@ -145,7 +153,6 @@ img {
       }
   }
   .star-field {
-      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
