@@ -105,7 +105,6 @@ img {
 
 .astra-image {
       box-shadow: inset 0 0 0 1000px rgba(84, 38, 121, .3);
-      position: fixed;
       top: 0;
       left: 0;
       z-index: -3;
@@ -113,7 +112,6 @@ img {
   .astra-image:before {
       content: "";
       background: #000;
-      position: fixed;
       z-index: -1;
       top: 0;
       left: 0;
