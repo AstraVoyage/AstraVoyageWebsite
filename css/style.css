@@ -7466,8 +7466,7 @@ button.bg-dark:focus {
   padding: 0 !important;
 }
 
-.pt-0,
-.py-0 {
+.pt-0 {
   padding-top: 0 !important;
 }
 
@@ -7476,8 +7475,7 @@ button.bg-dark:focus {
   padding-right: 0 !important;
 }
 
-.pb-0,
-.py-0 {
+.pb-0 {
   padding-bottom: 0 !important;
 }
 
@@ -8619,16 +8617,14 @@ button.bg-dark:focus {
   .py-lg-3 {
     padding-top: 1rem !important;
   }
-  .pr-lg-3,
-  .px-lg-3 {
+  .pr-lg-3 {
     padding-right: 1rem !important;
   }
   .pb-lg-3,
   .py-lg-3 {
     padding-bottom: 1rem !important;
   }
-  .pl-lg-3,
-  .px-lg-3 {
+  .pl-lg-3 {
     padding-left: 1rem !important;
   }
   .p-lg-4 {
