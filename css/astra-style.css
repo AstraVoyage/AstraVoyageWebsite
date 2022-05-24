@@ -106,16 +106,12 @@ img {
 .astra-image {
       background: url("img/astra_voyage_background.png") no-repeat;
       box-shadow: inset 0 0 0 1000px rgba(84, 38, 121, .3);
-      top: 0;
-      left: 0;
       z-index: -3;
   }
   .astra-image:before {
       content: "";
       background: #000;
       z-index: -1;
-      top: 0;
-      left: 0;
       opacity: 0.3;
   }
   @keyframes sf-fly-by-1 {
