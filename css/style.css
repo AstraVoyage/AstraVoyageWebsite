@@ -6590,6 +6590,7 @@ button.bg-dark:focus {
 
 .justify-content-end {
   justify-content: flex-end !important;
+  text-align: right;
 }
 
 .justify-content-center {
