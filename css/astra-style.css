@@ -1,3 +1,8 @@
+img {
+	vertical-align: middle;
+	border-style;
+}
+
 .logo {
 	max-height: 5rem;
 	max-width: 5rem;
@@ -47,4 +52,9 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+}
+
+.astra-image {
+	max-width: 100%;
+    height: auto;
 }
