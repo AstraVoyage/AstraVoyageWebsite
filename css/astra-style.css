@@ -25,6 +25,14 @@ img {
     z-index: 1;
 }
 
+.astra-nav-left {
+	text-align: center;
+}
+
+.astra-nav-right {
+	float: right!important;
+}
+
 .astra-nav-style {
 	color: #000!important;
     background-color: #fff!important;
