@@ -25,6 +25,10 @@ img {
     z-index: 1;
 }
 
+.astra-nav-left {
+	float: left;
+}
+
 .astra-nav-center {
 	text-align: center;
 }
