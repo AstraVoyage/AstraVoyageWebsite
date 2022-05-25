@@ -25,7 +25,7 @@ img {
     z-index: 1;
 }
 
-.astra-nav-left {
+.astra-nav-center {
 	text-align: center;
 }
 
@@ -44,7 +44,6 @@ img {
 
 .astra-link-item {
 	padding: 8px 16px;
-    float: left;
     width: auto;
     border: none;
     display: block;
