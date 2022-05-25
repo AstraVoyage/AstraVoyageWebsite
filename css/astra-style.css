@@ -27,14 +27,17 @@ img {
 
 .astra-nav-left {
 	text-align: left;
+	display:inline-block
 }
 
 .astra-nav-center {
 	text-align: center;
+	display:inline-block
 }
 
 .astra-nav-right {
 	text-align: right;
+	display:inline-block
 }
 
 .astra-nav-style {
