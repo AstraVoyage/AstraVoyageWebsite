@@ -26,7 +26,7 @@ img {
 }
 
 .astra-nav-left {
-	float: left;
+	text-align: left;
 }
 
 .astra-nav-center {
@@ -34,7 +34,7 @@ img {
 }
 
 .astra-nav-right {
-	float: right!important;
+	text-align: right;
 }
 
 .astra-nav-style {
