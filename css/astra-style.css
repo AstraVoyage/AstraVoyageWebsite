@@ -46,6 +46,10 @@ ul.topnav li.right {
   float: right;
 }
 
+.astra-logo-link {
+  display: inline-flex;
+}
+
 ul.topnav li a {
   display: block;
   color: white;
