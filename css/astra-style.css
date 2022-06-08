@@ -96,4 +96,6 @@ ul.topnav li a.active {
   color: white;
   background-color: transparent;
   font-weight: bold;
+  text-align: center;
+  z-index:-1;
 }
