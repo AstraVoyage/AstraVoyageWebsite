@@ -1,29 +1,18 @@
-function getCenter(sky) {
-  const w = sky.clientWidth
-  const h = sky.clientHeight
-  return {
-    x: parseInt(w / 2),
-    y: parseInt(h / 2),
-  }
-}
+for(var i = 0; i < 200; i++) {
+  //get random dimensions
+  var x = Math.random() * 100;
+  var y = Math.random() * 50;
+  var d = Math.random() * 4;
+  var s = Math.random() * 2 + 1.5;
+  //create new element and add to html
+  var star = document.createElement("div");
+  star.classList.add("star");
+  var sky = document.getElementById("sky");
+  sky.appendChild(star);
 
-function getDot(x, y, group) {
-  const size = Math.round(Math.random() + 2)
-  const dot = document.createElement('span')
-  dot.classList.add('stars-star', `stars-axis-${group}`, `stars-size-${size}`)
-  dot.style.top = `${y}px`
-  dot.style.left = `${x}px`
-  return dot.cloneNode()
+  star.style.width = d + "px";
+  star.style.height = d + "px";
+  star.style.top = y + "%";
+  star.style.left = x + "%";
+  star.style.animationDuration = s + "s";
 }
-
-function init() {
-  const sky = document.querySelector('#stars-sky')
-  sky.innerHTML = ''
-  for (let i = 1; i < 360; i++) {
-    const { x, y } = getCenter(sky)
-    const dot = getDot(x, y, i)
-    sky.appendChild(dot)
-  }
-}
-
-window.onload = init
