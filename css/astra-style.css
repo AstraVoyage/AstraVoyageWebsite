@@ -48,9 +48,13 @@ ul.topnav li.right {
 
 .astra-logo-link {
   display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-ul.topnav li a {
+.astra-nav-link {
   display: block;
   color: white;
   text-align: center;
