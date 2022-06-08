@@ -108,6 +108,7 @@ ul.topnav li a.active {
 
 .astra-voyage-row {
   color:  white;
+  text-align: center;
 }
 
 .astra-voyage-row::after {
