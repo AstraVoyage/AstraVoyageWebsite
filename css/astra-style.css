@@ -41,6 +41,13 @@ ul.topnav li a.active {
 
 
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.left, ul.topnav li {
+    float: none;
+  }
 }
