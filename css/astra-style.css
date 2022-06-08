@@ -90,3 +90,10 @@ ul.topnav li a.active {
     float: none;
   }
 }
+
+
+.astra-voyage-header {
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+}
