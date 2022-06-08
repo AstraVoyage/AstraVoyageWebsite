@@ -15,6 +15,10 @@ ul.topnav li.left {
   float: left;
 }
 
+ul.topnav li.center {
+  display: inline-block;
+}
+
 ul.topnav li.right {
   float: right;
 }
