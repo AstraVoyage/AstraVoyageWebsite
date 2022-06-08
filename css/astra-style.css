@@ -33,12 +33,12 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {
   color: #542679;
-  background-color: #f3ecf9;
+  background-color: #dbc5ed;
 }
 
 ul.topnav li a.active {
-   color: #542679;
-  background-color: #f3ecf9;
+  color: #542679;
+  background-color: #dbc5ed;
 }
 
 
