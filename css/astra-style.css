@@ -1,6 +1,8 @@
-body {margin: 0;}
+body {
+  margin: 0;
+}
 
-ul.topnav {
+ul.astra-voyage-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -8,9 +10,11 @@ ul.topnav {
   background-color: #542679;
 }
 
-ul.topnav li {float: left;}
+ul.astra-voyage-nav li {
+  float: left;
+}
 
-ul.topnav li a {
+ul.astra-voyage-nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -18,16 +22,22 @@ ul.topnav li a {
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #36184e;}
+ul.astra-voyage-nav li a:hover:not(.active) {
+  background-color: #36184e;
+}
 
-ul.topnav li a.active {
+ul.astra-voyage-nav li a.active {
   background-color: white;
   color: #542679;
 }
 
-ul.topnav li.right {float: right;}
+ul.astra-voyage-nav li.right {
+  float: right;
+}
 
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+  ul.astra-voyage-nav li.right, 
+  ul.astra-voyage-nav li {
+    float: none;
+  }
 }
