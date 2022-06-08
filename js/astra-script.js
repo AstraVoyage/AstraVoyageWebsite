@@ -7,7 +7,7 @@ for(var i = 0; i < 200; i++) {
   //create new element and add to html
   var star = document.createElement("div");
   star.classList.add("star");
-  var sky = document.getElementById("sky");
+  var sky = document.getElementById("astra-voyage-body");
   sky.appendChild(star);
 
   star.style.width = d + "px";
