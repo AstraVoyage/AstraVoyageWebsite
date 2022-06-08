@@ -3,25 +3,158 @@ body {
   background-color: #000;
 }
 
-.main{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    height: 1px;
-    width: 1px;
-    background-color: #fff;
-    border-radius: 50%;
-    box-shadow: 44vw 43vh 0px 3px #fff,24vw 40vh 3px 3px #fff,15vw -20vh 3px 1px #fff,-49vw 14vh 0px 2px #fff,16vw 20vh 1px 0px #fff,45vw -18vh 3px 3px #fff,8vw -46vh 0px 3px #fff,-13vw 42vh 1px 3px #fff,6vw 38vh 2px 1px #fff,23vw 20vh 1px 1px #fff,-16vw 25vh 3px 1px #fff,-45vw -26vh 2px 0px #fff,33vw -11vh 3px 0px #fff,50vw 20vh 2px 0px #fff,11vw -5vh 2px 3px #fff,26vw -11vh 0px 1px #fff,2vw 34vh 0px 0px #fff,47vw 17vh 1px 2px #fff,-8vw -14vh 3px 1px #fff,12vw -4vh 1px 0px #fff,35vw 43vh 0px 0px #fff,46vw 22vh 2px 0px #fff,47vw 16vh 2px 2px #fff,-28vw -3vh 0px 3px #fff,32vw -42vh 1px 1px #fff,5vw 29vh 1px 0px #fff,5vw 29vh 2px 1px #fff,-47vw 11vh 2px 1px #fff,31vw 3vh 1px 0px #fff,1vw -14vh 3px 2px #fff,22vw 40vh 0px 0px #fff,4vw -44vh 0px 2px #fff,10vw 17vh 2px 2px #fff,-12vw -1vh 2px 3px #fff,-24vw -14vh 2px 1px #fff,-21vw 15vh 2px 0px #fff,-24vw -28vh 3px 3px #fff,-33vw 16vh 1px 3px #fff,-7vw -42vh 0px 2px #fff,49vw 27vh 3px 1px #fff,-24vw 48vh 0px 2px #fff,26vw 0vh 1px 2px #fff,-7vw 14vh 3px 0px #fff,-49vw -50vh 2px 0px #fff,-12vw 12vh 0px 2px #fff,19vw 9vh 2px 2px #fff,-29vw 47vh 1px 1px #fff,6vw -47vh 2px 1px #fff,23vw 44vh 2px 2px #fff,23vw -41vh 3px 1px #fff,28vw 35vh 0px 1px #fff,20vw 39vh 2px 0px #fff,26vw 14vh 1px 1px #fff,-17vw 9vh 0px 3px #fff,-14vw 4vh 3px 0px #fff,48vw -25vh 0px 0px #fff,26vw 9vh 0px 1px #fff,-26vw 20vh 0px 0px #fff,21vw 47vh 2px 0px #fff,28vw 19vh 2px 2px #fff,-14vw -28vh 2px 2px #fff,-43vw -29vh 1px 2px #fff,-48vw 31vh 2px 0px #fff,-45vw -12vh 2px 2px #fff,50vw 41vh 3px 3px #fff,32vw 17vh 0px 0px #fff,-35vw -25vh 3px 2px #fff,2vw 44vh 0px 2px #fff,26vw 36vh 2px 2px #fff,-17vw 1vh 1px 3px #fff,14vw -12vh 1px 1px #fff,13vw 19vh 1px 1px #fff,-47vw -35vh 1px 2px #fff,25vw 42vh 1px 2px #fff,37vw 41vh 0px 1px #fff,29vw 0vh 2px 1px #fff,-25vw 20vh 2px 3px #fff,-31vw -34vh 3px 0px #fff,23vw -16vh 2px 2px #fff,-5vw -23vh 1px 0px #fff,1vw 26vh 1px 1px #fff,11vw 31vh 0px 1px #fff,19vw 1vh 3px 1px #fff,17vw -22vh 1px 3px #fff,30vw 4vh 2px 2px #fff,-32vw 25vh 1px 2px #fff,-13vw -43vh 0px 0px #fff,-20vw -4vh 0px 2px #fff,-36vw 37vh 1px 1px #fff,50vw -38vh 3px 2px #fff,-32vw 24vh 0px 3px #fff,-35vw -47vh 2px 0px #fff,-4vw -46vh 3px 2px #fff,-12vw 27vh 2px 1px #fff,25vw -31vh 1px 1px #fff,-34vw -15vh 2px 2px #fff,-26vw -13vh 3px 2px #fff,27vw 49vh 0px 0px #fff,30vw -15vh 0px 2px #fff,9vw 37vh 1px 2px #fff;
-  }
+$pi: 3.14159265359;
+$_precision: 10;
 
-@keyframes zoom {
-    0%{
-        transform: scale(1);
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
     }
-    100%{
-        transform: scale(1.5);
+  }
+  @if $exp < 1 {
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
     }
+  }
+  @return $value;
 }
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0 {
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle) {
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1)) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+
+@function cos($angle) {
+  $a: _to_unitless_rad($angle);
+  $cos: 1;
+  @for $n from 1 through $_precision {
+    $cos: $cos + (pow(-1, $n) / fact(2 * $n)) * pow($a, 2 * $n);
+  }
+  @return $cos;
+}
+
+@function tan($angle) {
+  @return sin($angle) / cos($angle);
+}
+
+@function reminder($origin, $mod) {
+  $q: if(($origin / $mod) > 0, floor($origin / $mod), ceil($origin / $mod));
+  @return $origin - ($mod * $q);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.stars-outer {
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgb(0, 10, 24) 100%);
+}
+
+#stars-sky {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.stars-star {
+  opacity: 0;
+  transform-origin: 0, 0;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
+  border-radius: 100%;
+  animation-timing-function: linear, linear !important;
+  animation-iteration-count: infinite, infinite !important;
+  animation-delay: -30s, -30s !important;
+}
+
+.stars-size-1 {
+  width: 0.5px;
+  height: 0.5px;
+}
+
+.stars-size-2 {
+  width: 1px;
+  height: 1px;
+}
+
+.stars-size-3 {
+  width: 2px;
+  height: 2px;
+}
+
+@for $i from 1 to 360 {
+  $t: random(40000) + 5000;
+  $angle: $i - reminder($i, 4);
+  .stars-axis-#{$i} {
+    animation: anim#{$angle} #{$t}ms, fade#{random(10)} #{$t}ms;
+  }
+}
+
+// FADE EFFECT
+@for $i from 1 to 11 {
+  $start: random(20);
+  $end: $start + 10;
+  @keyframes fade#{$i} {
+    #{$start + "%"} {
+      opacity: 0;
+    }
+    #{$end + "%"} {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+// MOVE ANIMATION
+@for $i from 1 to 91 {
+  $a: $i * 4;
+  @keyframes anim#{$a} {
+    $angle: $pi * 2 * ($a / 360);
+    $y: 80 * sin($angle);
+    $x: 80 * cos($angle);
+    100% {
+      transform: translate(#{$x}vw, #{$y}vh);
+    }
+  }
+}
+
+
 
 ul.topnav {
   list-style-type: none;
