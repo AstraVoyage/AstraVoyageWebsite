@@ -27,3 +27,78 @@ body {
   position: absolute; 
   width: 15000px;
 }
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #542679;
+  text-align:center;
+}
+
+ul.topnav li.left {
+  float: left;
+}
+
+ul.topnav li.center {
+  display: inline-block;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+.astra-logo-link {
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.astra-nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  color: #ffffff;
+  background-color: #dbc5ed;
+}
+
+ul.topnav li a.active {
+  color: #ffffff;
+  background-color: #dbc5ed;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.center, ul.topnav li {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.left, ul.topnav li {
+    float: none;
+  }
+}
+
+
+.astra-voyage-header {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
+}
