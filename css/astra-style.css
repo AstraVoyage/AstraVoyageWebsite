@@ -102,13 +102,13 @@ hr {
 .twinkle {
   height: 15000px;
   position: fixed; 
-  width: 15000px;
+  width: 100vw;
 }
 
 .star-container {
   height: 15000px;
   position: absolute; 
-  width: 15000px;
+  width: 100vw;
 }
 
 
