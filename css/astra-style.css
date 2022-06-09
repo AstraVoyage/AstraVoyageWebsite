@@ -98,6 +98,7 @@ ul.topnav li a.active {
 
 .astra-voyage-header {
   text-align: center;
+  position: relative;
 }
 
 .astra-voyage-header-title {
