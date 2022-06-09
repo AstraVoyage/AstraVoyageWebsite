@@ -173,6 +173,7 @@ ul.topnav li a.active {
   box-shadow: 0 4px 8px 0 rgba(255,255,255,0.2);
   transition: 0.3s;
   width: 32rem;
+  height: 48rem;
   color: white;
   position: relative;
   margin: auto;
