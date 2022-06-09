@@ -56,11 +56,18 @@ footer {
   background: black url(/img/stars.png) repeat;
 }
 
-.twinkle, .star-container {
+.twinkle {
   height: 15000px;
   position: fixed; 
   width: 15000px;
 }
+
+.star-container {
+  height: 15000px;
+  position: absolute; 
+  width: 15000px;
+}
+
 
 
 ul.topnav {
