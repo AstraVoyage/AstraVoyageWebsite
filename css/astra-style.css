@@ -94,8 +94,9 @@ ul.topnav li a.active {
 
 .astra-voyage-header {
   color: white;
-  background-color: transparent;
+  background-color: black;
   font-weight: bold;
   text-align: center;
   z-index:-1;
+  opacity: 0.1;
 }
