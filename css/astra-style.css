@@ -15,11 +15,11 @@ body {
 
 .twinkle {
   animation: move-background 100s linear infinite;
-  background: url('img/twinkling.png') repeat;
+  background: url(img/twinkling.png) repeat;
 }
 
 .star-container {
-  background: black url('img/stars.png') repeat;
+  background: black url(img/stars.png) repeat;
 }
 
 .twinkle, .star-container {
