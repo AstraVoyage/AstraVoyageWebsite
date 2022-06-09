@@ -29,17 +29,35 @@
 
 @media screen and (max-width: 1200px) {
   .col-3 {
-    width: 100%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .col-4 {
-    width: 100%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 1200px) {
+  .col-6 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .col-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .col-6 {
     width: 100%;
   }
