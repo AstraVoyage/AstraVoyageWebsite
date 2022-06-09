@@ -97,6 +97,4 @@ ul.topnav li a.active {
   background-color: black;
   font-weight: bold;
   text-align: center;
-  z-index:-1;
-  opacity: 0.1;
 }
