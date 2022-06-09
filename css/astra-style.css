@@ -58,7 +58,7 @@ footer {
 
 .twinkle, .star-container {
   height: 15000px;
-  position: absolute; 
+  position: fixed; 
   width: 15000px;
 }
 
