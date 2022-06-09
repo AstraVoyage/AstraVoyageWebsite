@@ -293,4 +293,8 @@ ul.topnav li a.active {
   border-radius: 16px;
 }
 
+.astra-voyage-container {
+  margin: 0;
+  padding: 0;
+}
 
