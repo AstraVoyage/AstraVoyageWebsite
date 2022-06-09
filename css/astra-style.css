@@ -161,6 +161,8 @@ ul.topnav li a.active {
   position: relative;
   margin: auto;
   border-radius: 16px;
+  text-align: center;
+  background-color: rgb(84, 38, 121, 0.7);
 }
 
 .card:hover {
