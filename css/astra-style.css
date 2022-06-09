@@ -97,8 +97,14 @@ ul.topnav li a.active {
 
 
 .astra-voyage-header {
-  color: white;
-  background-color: black;
-  font-weight: bold;
   text-align: center;
+}
+
+.astra-voyage-header-title {
+  color: white;
+  font-weight: bolder;
+}
+
+.astra-voyage-header-subtitle {
+  color: white;
 }
