@@ -37,6 +37,10 @@ footer {
   position: relative;
 }
 
+hr {
+  border: 3px solid white;
+}
+
 @keyframes move-background {
   from {
     left: -1000px
