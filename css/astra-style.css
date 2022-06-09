@@ -162,7 +162,7 @@ ul.topnav li a.active {
   margin: auto;
   border-radius: 16px;
   text-align: center;
-  background-color: rgb(84, 38, 121, 0.7);
+  background-color: rgb(84, 38, 121, 1);
 }
 
 .astra-voyage-validator:hover {
@@ -179,7 +179,7 @@ ul.topnav li a.active {
   margin: auto;
   border-radius: 16px;
   text-align: center;
-  background-color: rgb(84, 38, 121, 0.7);
+  background-color: rgb(84, 38, 121, 1);
 }
 
 .astra-voyage-team:hover {
