@@ -7,7 +7,17 @@ for(var i = 0; i < 200; i++) {
   //create new element and add to html
   var star = document.createElement("div");
   star.classList.add("star");
+
   var sky = document.getElementById("astra-voyage-body");
+  sky.appendChild(star);
+
+  star.style.width = d + "px";
+  star.style.height = d + "px";
+  star.style.top = y + "%";
+  star.style.left = x + "%";
+  star.style.animationDuration = s + "s";
+
+  var sky = document.getElementById("astra-voyage-header");
   sky.appendChild(star);
 
   star.style.width = d + "px";
