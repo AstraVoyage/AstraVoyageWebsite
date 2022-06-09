@@ -1,56 +1,100 @@
+body {
+  margin: 0;
+  background-color: black;
+}
 
-@keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+.astra-voyage-body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: black;
 }
-@-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+
+.star {
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
 }
-@-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+
+
+@keyframes twinkle {
+  50% {
+    transform: scale(0.2);   
+  }
+} 
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #542679;
+  text-align:center;
 }
-@-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+
+ul.topnav li.left {
+  float: left;
 }
-@keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+
+ul.topnav li.center {
+  display: inline-block;
 }
-@-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+
+ul.topnav li.right {
+  float: right;
 }
-@-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+
+.astra-logo-link {
+  display: inline-flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-@-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+
+.astra-nav-link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-.stars, .twinkling {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+
+ul.topnav li a:hover:not(.active) {
+  color: #ffffff;
+  background-color: #dbc5ed;
 }
-.stars {
-  background:#000 url(images/stars.png) repeat top center;
-  z-index:0;
+
+ul.topnav li a.active {
+  color: #ffffff;
+  background-color: #dbc5ed;
 }
-.twinkling{
-  background:transparent url(images/twinkling.png) repeat top center;
-  z-index:1;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.center, ul.topnav li {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.left, ul.topnav li {
+    float: none;
+  }
+}
+
+
+.astra-voyage-header {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
 }
