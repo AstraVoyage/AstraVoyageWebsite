@@ -144,6 +144,7 @@ ul.topnav li a.active {
   width: 40%;
   color: white;
   position: relative;
+  margin: auto;
 }
 
 .card:hover {
