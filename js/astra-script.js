@@ -7,7 +7,7 @@ for(var i = 0; i < 200; i++) {
   //create new element and add to html
   var star = document.createElement("div");
   star.classList.add("star");
-
+  
   var sky = document.getElementById("astra-voyage-body");
   sky.appendChild(star);
 
@@ -16,17 +16,4 @@ for(var i = 0; i < 200; i++) {
   star.style.top = y + "%";
   star.style.left = x + "%";
   star.style.animationDuration = s + "s";
-
-  //create new element and add to html
-  var star1 = document.createElement("div");
-  star1.classList.add("star");
-
-  var sky1 = document.getElementById("astra-voyage-header");
-  sky1.appendChild(star1);
-
-  star1.style.width = d + "px";
-  star1.style.height = d + "px";
-  star1.style.top = y + "%";
-  star1.style.left = x + "%";
-  star1.style.animationDuration = s + "s";
 }
