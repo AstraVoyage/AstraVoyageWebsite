@@ -27,13 +27,13 @@
 .col-12 {width: 100%;}
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .col-3 {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   .col-4 {
     width: 100%;
   }
@@ -187,6 +187,19 @@ ul.topnav li a.active {
 
 .astra-voyage-validator:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .astra-voyage-validator {
+    width: 36rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .astra-voyage-validator {
+    width: 36rem;
+  }
 }
 
 .astra-voyage-validator-logo {
