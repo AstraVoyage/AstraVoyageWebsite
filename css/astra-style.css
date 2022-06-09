@@ -192,13 +192,13 @@ ul.topnav li a.active {
 
 @media screen and (max-width: 1200px) {
   .astra-voyage-validator {
-    width: 36rem;
+    width: 85%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .astra-voyage-validator {
-    width: 36rem;
+    width: 85%;
   }
 }
 
