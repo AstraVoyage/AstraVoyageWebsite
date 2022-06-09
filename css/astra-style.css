@@ -270,3 +270,24 @@ ul.topnav li a.active {
   padding: 2px 16px;
 }
 
+.astra-voyage-validator-button {
+  background-color: white; /* Green */
+  border: none;
+  color: #542679;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.astra-voyage-validator-button:hover {
+  color: white;
+  background-color: #542679;
+  border: 2px solid white;
+}
+
+
