@@ -151,19 +151,21 @@ ul.bottom-nav {
 ul.bottom-nav li.left {
   float: left;
   margin-left: 2rem;
+  margin-top: 4rem;
 }
 
 ul.bottom-nav li.center {
   display: inline-block;
+  margin-top: 4rem;
 }
 
 ul.bottom-nav li.right {
   float: right;
   margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .astra-voyage-nav {
-  margin-top: 2rem;
 }
 
 .astra-logo-link {
