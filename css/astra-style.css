@@ -215,6 +215,25 @@ ul.topnav li a.active {
 }
 
 
+@media screen and (max-width: 600px) {
+  ul.bottomnav li.right, ul.bottomnav li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.bottomnav li.center, ul.bottomnav li {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.bottomnav li.left, ul.bottomnav li {
+    float: none;
+  }
+}
+
+
 .astra-voyage-header {
   text-align: center;
   position: relative;
