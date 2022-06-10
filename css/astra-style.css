@@ -142,6 +142,7 @@ ul.topnav li.right {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: xx-large;
 }
 
 .astra-nav-link {
@@ -151,6 +152,7 @@ ul.topnav li.right {
   padding: 14px 16px;
   text-decoration: none;
   position: relative;
+  font-size: xx-large;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -186,6 +188,7 @@ ul.topnav li a.active {
 .astra-voyage-header {
   text-align: center;
   position: relative;
+  font-size: x-large;
 }
 
 .astra-voyage-header-title {
