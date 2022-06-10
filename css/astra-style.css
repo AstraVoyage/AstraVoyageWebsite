@@ -216,7 +216,7 @@ ul.topnav li a.active {
 
 
 @media screen and (max-width: 600px) {
-  ul.bottom-nav li.right, ul.bottom-nav li {
+  ul.bottom-nav, ul.bottom-nav li {
     float: none;
   }
 }
