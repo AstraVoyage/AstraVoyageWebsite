@@ -126,16 +126,17 @@ ul.topnav {
 
 ul.topnav li.left {
   float: left;
-  margin-top: 2rem;
 }
 
 ul.topnav li.center {
   display: inline-block;
-  margin-top: 2rem;
 }
 
 ul.topnav li.right {
   float: right;
+}
+
+.astra-voyage-nav {
   margin-top: 2rem;
 }
 
