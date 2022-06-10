@@ -216,19 +216,19 @@ ul.topnav li a.active {
 
 
 @media screen and (max-width: 600px) {
-  ul.bottomnav li.right, ul.bottomnav li {
+  ul.bottom-nav li.right, ul.bottom-nav li {
     float: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  ul.bottomnav li.center, ul.bottomnav li {
+  ul.bottom-nav li.center, ul.bottom-nav li {
     display: inline;
   }
 }
 
 @media screen and (max-width: 600px) {
-  ul.bottomnav li.left, ul.bottomnav li {
+  ul.bottom-nav li.left, ul.bottom-nav li {
     float: none;
   }
 }
