@@ -150,6 +150,7 @@ ul.bottom-nav {
 
 ul.bottom-nav li.left {
   float: left;
+  margin-left: 2rem;
 }
 
 ul.bottom-nav li.center {
@@ -158,6 +159,7 @@ ul.bottom-nav li.center {
 
 ul.bottom-nav li.right {
   float: right;
+  margin-right: 2rem;
 }
 
 .astra-voyage-nav {
