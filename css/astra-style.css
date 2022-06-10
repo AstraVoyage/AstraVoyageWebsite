@@ -137,6 +137,28 @@ ul.topnav li.right {
   float: right;
 }
 
+ul.bottom-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #542679;
+  text-align:center;
+  position: relative;
+}
+
+ul.bottom-nav li.left {
+  float: left;
+}
+
+ul.bottom-nav li.center {
+  display: inline-block;
+}
+
+ul.bottom-nav li.right {
+  float: right;
+}
+
 .astra-voyage-nav {
   margin-top: 2rem;
 }
