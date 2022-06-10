@@ -295,7 +295,10 @@ ul.topnav li a.active {
 }
 
 .astra-voyage-container {
-  margin: 0;
+  margin-top: 8rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0;
 }
 
