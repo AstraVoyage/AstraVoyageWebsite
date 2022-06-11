@@ -455,3 +455,17 @@ display: block;
   margin-bottom: 20px;
 }
 }
+
+.astra-voyage-team-image {
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.astra-voyage-team-image-fill {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
