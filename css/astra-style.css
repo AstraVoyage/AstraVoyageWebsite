@@ -409,16 +409,9 @@ ul.topnav li a.active {
 }
 
 .footer-bottom p{
-   float: left;
    font-size: 14px;
    word-spacing: 2px;
    text-transform: capitalize;
-}
-
-@media screen and (max-width: 1200px) {
-  .footer-bottom p {
-    float: none;
-  }
 }
 
 
@@ -435,12 +428,6 @@ ul.topnav li a.active {
 
 .footer-menu{
   float: right;
-}
-
-@media screen and (max-width: 1200px) {
-  .footer-menu{
-    float: none;
-  }
 }
 
 .footer-menu ul{
