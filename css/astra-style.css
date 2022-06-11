@@ -461,7 +461,8 @@ display: block;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
 }
 
 .astra-voyage-team-image-fill {
