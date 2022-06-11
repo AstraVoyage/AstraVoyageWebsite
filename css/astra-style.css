@@ -436,6 +436,12 @@ ul.topnav li a.active {
   float: right;
 }
 
+@media screen and (max-width: 1200px) {
+  .footer-menu{
+    float: none;
+  }
+}
+
 .footer-menu ul{
   display: flex;
 }
