@@ -470,5 +470,5 @@ display: block;
 .astra-voyage-team-image-fill {
   flex-shrink: 0;
   min-width: 100%;
-  min-height: 100%
+  height: 75%
 }
