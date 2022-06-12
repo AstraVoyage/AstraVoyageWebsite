@@ -141,6 +141,7 @@ ul.topnav li.center {
 
 ul.topnav li.right {
   float: right;
+  display: inline-block;
 }
 
 ul.bottom-nav {
