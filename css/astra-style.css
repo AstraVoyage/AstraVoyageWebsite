@@ -249,6 +249,7 @@ ul.topnav li a.active {
 .astra-voyage-header-title {
   color: white;
   font-weight: bolder;
+  margin-bottom: 8rem;
 }
 
 .astra-voyage-header-subtitle {
