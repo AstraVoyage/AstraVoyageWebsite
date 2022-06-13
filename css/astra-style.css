@@ -203,38 +203,38 @@ ul.topnav li a.active {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.right, ul.topnav li {
     float: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.center, ul.topnav li {
     display: inline;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.topnav li.left, ul.topnav li {
     float: none;
   }
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.bottom-nav, ul.bottom-nav li {
     float: none;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.bottom-nav li.center, ul.bottom-nav li {
     display: inline;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   ul.bottom-nav li.left, ul.bottom-nav li {
     float: none;
   }
