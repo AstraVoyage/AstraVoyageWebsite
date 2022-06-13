@@ -245,6 +245,8 @@ ul.topnav li a.active {
   text-align: center;
   position: relative;
   font-size: x-large;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .astra-voyage-header-title {
