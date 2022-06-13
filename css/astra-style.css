@@ -262,7 +262,7 @@ ul.topnav li a.active {
 .astra-voyage-validator {
   box-shadow: 0 6px 10px 0 rgba(255,255,255,0.2);
   transition: 0.3s;
-  width: 22rem;
+  width: 20rem;
   height: 14rem;
   color: white;
   position: relative;
@@ -272,6 +272,8 @@ ul.topnav li a.active {
   margin-bottom: 8rem;
   background-color: rgb(84, 38, 121, 1);
   padding-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .astra-voyage-validator:hover {
